@@ -26,7 +26,7 @@ export function Profile({
       <UserDescription>
         <UserImg src={avatar} alt={`${username} avatar`} />
         <UserName>{username}</UserName>
-        <UserTag>{tag}</UserTag>
+        <UserTag>@{tag}</UserTag>
         <UserLocation>{location}</UserLocation>
       </UserDescription>
 

@@ -30,6 +30,8 @@ export const UserImg = styled.img`
 
   margin-bottom: 15px;
 
+  background-color: #bababa;
+
   border-radius: 50%;
 `;
 
