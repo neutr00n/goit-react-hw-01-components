@@ -6,14 +6,14 @@ import {
   FriendName,
 } from './FriendListItem.styled';
 
-export const FriendListItem = ({ friends }) => {
-  return friends.map(({ avatar, name, isOnline, id }) => (
-    <FriendItem key={id}>
+export const FriendListItem = ({ avatar, name, isOnline }) => {
+  return (
+    <FriendItem>
       <FriendStatus status={isOnline}></FriendStatus>
       <FriendImg src={avatar} alt={`${name} avatar`} width="48" />
       <FriendName>{name}</FriendName>
     </FriendItem>
-  ));
+  );
 };
 
 FriendListItem.propTypes = {
@@ -22,7 +22,6 @@ FriendListItem.propTypes = {
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
-      id: PropTypes.number.isRequired,
     })
   ),
 };
